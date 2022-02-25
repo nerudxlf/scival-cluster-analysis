@@ -22,3 +22,4 @@ def main():
     print(f"G\n{counter_g}")
     print(f"F\n{counter_f}")
 
+

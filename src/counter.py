@@ -25,6 +25,9 @@ class Counter:
     def get_average_scholarly_output(self):
         return sum(self.scholarly_output) / len(self.cluster_names)
 
+    def get_cluster_names(self):
+        return "\n".join(self.cluster_names)
+
     def __str__(self):
         return f"Average FWCI: {self.get_average_value_fwci()}\n" \
                f"Average Scholarly Output: {self.get_average_scholarly_output()}\n" \
