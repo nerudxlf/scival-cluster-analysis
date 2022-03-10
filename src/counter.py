@@ -25,6 +25,9 @@ class Counter:
     def get_average_scholarly_output(self):
         return sum(self.scholarly_output) / len(self.cluster_names)
 
+    def get_total_scholarly_output(self):
+        return sum(self.scholarly_output)
+
     def get_cluster_names(self):
         return "\n".join(self.cluster_names)
 
@@ -32,4 +35,6 @@ class Counter:
         return f"Average FWCI: {self.get_average_value_fwci()}\n" \
                f"Average Scholarly Output: {self.get_average_scholarly_output()}\n" \
                f"Total: {self.get_value_clusters()}\n" \
-               f"Prominence percentile: {self.get_average_prominence_percentile()}\n"
+               f"Prominence percentile: {self.get_average_prominence_percentile()}\n" \
+               f"Total scholarly output: {self.get_total_scholarly_output()}\n" \
+               f"Clusters: {self.get_cluster_names()}"
